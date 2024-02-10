@@ -167,6 +167,10 @@ namespace HRLib
             {
                 carrier = "Nova";
             }
+            else
+            {
+                carrier = "Unknown";
+            }
 
             return carrier;
         }
