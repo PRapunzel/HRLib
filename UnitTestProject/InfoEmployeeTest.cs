@@ -15,8 +15,8 @@ namespace UnitTestProject
 
 
             object[,] testcases = {
-                {1, new HRLib.HRLib.Employee("Markantonis Dimitrios", "210981417", "6972634757", new DateTime(2001,11,3), new DateTime(2023,1,7)), 23,1},
-                {2, new HRLib.HRLib.Employee("Markantonis Dimitrios", "210981417", "6972634757", new DateTime(2003,11,3), new DateTime(2020,1,7)), 21,4},
+                {1, new HRLib.HRLib.Employee("Markantonis Dimitrios", "2109813567", "6972847262", new DateTime(2001,11,3), new DateTime(2023,1,7)), 23,1,"ValidEmployeeInfo"},
+                {2, new HRLib.HRLib.Employee("MarkantonisDimitrios", "2109832132", "6972328201", new DateTime(2003,11,3), new DateTime(2020,1,7)), 21,4, "ValidEmployeeInfo"},
             };
 
             //Αρχικοποίηση δείκτη περιπτώσεων ελέγχου
@@ -42,7 +42,7 @@ namespace UnitTestProject
                     //Απέτυχε η περίπτωση ελέγχου
                     failed = true;
                     //Καταγράφουμε την περίπτωση ελέγχου που απέτυχε
-                    Console.WriteLine("Failed Test Case: {0}: {1}/{2}/ \n \t Reason: {3} ",
+                    Console.WriteLine("Failed Test Case: {0}: {1}/{2}/ \n \t Hint: {3} \n \t Reason: {4}",
                         (int)testcases[i, 0], (HRLib.HRLib.Employee)testcases[i, 1], (int)testcases[i, 2],
                         e.Message);
                 };

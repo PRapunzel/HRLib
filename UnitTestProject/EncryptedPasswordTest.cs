@@ -8,11 +8,12 @@ namespace UnitTestProject
     public class EncryptedPasswordTest
     {
         [TestMethod]
-        public void TestMethod1()
+        public void Test_Encryption()
         {
             HRLib.HRLib hRLib = new HRLib.HRLib();
             object[,] testcases = {
-                {1, "Markantonis&01", "Rfwpfsytsnx+56"}
+                {1, "Markantonis&01", "Rfwpfsytsnx+56", "Encryption OK"},
+                {2, "ZovoilisDimi&01", "_t{tnqnxInrn+56", "Encryption OK"},
             };
 
             //Αρχικοποίηση δείκτη περιπτώσεων ελέγχου
@@ -36,8 +37,8 @@ namespace UnitTestProject
                     //Απέτυχε η περίπτωση ελέγχου
                     failed = true;
                     //Καταγράφουμε την περίπτωση ελέγχου που απέτυχε
-                    Console.WriteLine("Failed Test Case: {0}: {1}/{2}/ \n \t Reason: {} ",
-                        (int)testcases[i, 0], (string)testcases[i, 1], (string)testcases[i, 2], 
+                    Console.WriteLine("Failed Test Case: {0}: {1}/{2}/ \n \t Hint: {3} \n \t Reason: {4} ",
+                        (int)testcases[i, 0], (string)testcases[i, 1], (string)testcases[i, 2], (string)testcases[i,3],
                         e.Message);
                 };
             };
