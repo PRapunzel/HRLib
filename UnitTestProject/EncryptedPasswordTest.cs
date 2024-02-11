@@ -14,6 +14,9 @@ namespace UnitTestProject
             object[,] testcases = {
                 {1, "Markantonis&01", "Rfwpfsytsnx+56", "Encryption OK"},
                 {2, "ZovoilisDimi&01", "_t{tnqnxInrn+56", "Encryption OK"},
+                {3, "MarkantonisDim&01", "RfwpfsytsnxInr+56", "Encryption OK"},
+                {4, "DimZovo**&*01", "Inr_t{t//+/56", "Encryption OK"},
+                {5, "Jmarkan###222", "Orfwpfs(((777", "Encryption OK"}
             };
 
             //Αρχικοποίηση δείκτη περιπτώσεων ελέγχου
