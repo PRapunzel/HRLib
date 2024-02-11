@@ -177,6 +177,12 @@ namespace HRLib
 
         public void InfoEmployee(Employee employee, ref int age, ref int yearsOfExperience)
         {
+            if(employee.Birthday.CompareTo(DateTime.Now) > 0 || employee.HiringDate.CompareTo(DateTime.Now) > 0)
+            {
+                age = -1;
+                yearsOfExperience = -1;
+                return;
+            }
             // Your logic to calculate age and years of experience
             // For simplicity, assuming that HiringDate represents the start of employment
             age = DateTime.Now.Year - employee.Birthday.Year;
