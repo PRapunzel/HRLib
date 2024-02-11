@@ -204,5 +204,26 @@ namespace HRLib
 
             return count;
         }
+
+        public static string formatEmployee(Employee employee) {
+            return $"\t\t Name: {employee.Name}" +
+                   $"\n\t\t Homephone: {employee.HomePhone}" +
+                   $"\n\t\t Mobile: {employee.MobilePhone}" +
+                   $"\n\t\t Birthday: {employee.Birthday}" +
+                   $"\n\t\t HiringDate: {employee.HiringDate}";
+        }
+
+        public static string formatEmployees(Employee[] employeeList)
+        {
+            int i = 0;
+            StringBuilder sb = new StringBuilder();
+            foreach(Employee employee in employeeList)
+            {
+                sb.Append($"\n\t - Employee #{i}\n");
+                sb.Append(formatEmployee(employee));
+                i++;
+            }
+            return sb.ToString();
+        }
     }
 }

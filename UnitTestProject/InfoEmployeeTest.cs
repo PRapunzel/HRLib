@@ -15,8 +15,14 @@ namespace UnitTestProject
 
 
             object[,] testcases = {
-                {1, new HRLib.HRLib.Employee("Markantonis Dimitrios", "2109813567", "6972847262", new DateTime(2001,11,3), new DateTime(2023,1,7)), 23,1,"ValidEmployeeInfo"},
-                {2, new HRLib.HRLib.Employee("MarkantonisDimitrios", "2109832132", "6972328201", new DateTime(2003,11,3), new DateTime(2020,1,7)), 21,4, "ValidEmployeeInfo"},
+                {
+                    1, new HRLib.HRLib.Employee("Markantonis Dimitrios", "2109813567", "6972847262", new DateTime(2001,11,3), 
+                    new DateTime(2023,1,7)), 23,1,"ValidEmployeeInfo"
+                },
+                {
+                    2, new HRLib.HRLib.Employee("MarkantonisDimitrios", "2109832132", "6972328201", new DateTime(2003,11,3), 
+                    new DateTime(2020,1,7)), 21,4, "ValidEmployeeInfo"
+                },
             };
 
             //Αρχικοποίηση δείκτη περιπτώσεων ελέγχου
