@@ -86,7 +86,7 @@ namespace HRLib
 
         public void CheckPhone(string phone, ref int typePhone, ref string infoPhone)
         {
-            phone = phone.Trim();
+            phone = string.Join("", phone.Split(default(string[]), StringSplitOptions.RemoveEmptyEntries));
 
             typePhone = -1;
             infoPhone = "null";
