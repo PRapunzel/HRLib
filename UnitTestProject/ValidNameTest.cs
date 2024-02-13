@@ -52,7 +52,8 @@ namespace UnitTestProject
             object[,] testcases = {
                 {1,true, "Markantonis Dimitrios", "FullNameIsSplit"},
                 {2,false, "MarkantonisDimitrios", "FullNameIsSplit"},
-                {2,false, "ZovoilisDim", "FullNameIsSplit"}
+                {3,false, "ZovoilisDim", "FullNameIsSplit"},
+                {4,true, "MarkantonisDim", "FullNameIsSplit"}
             };
 
             //Αρχικοποίηση δείκτη περιπτώσεων ελέγχου

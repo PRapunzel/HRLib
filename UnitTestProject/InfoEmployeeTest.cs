@@ -25,6 +25,10 @@ namespace UnitTestProject
                     2, new HRLib.HRLib.Employee("MarkantonisDimitrios", "2109832132", "6972328201", 
                     new DateTime(2003,11,3), new DateTime(2020,1,7)), 21, 4, resultMissMatch
                 },
+                {
+                    3, new HRLib.HRLib.Employee("TroussasXristos", "2109832132", "6972328201",
+                    new DateTime(2003,11,3), new DateTime(2020,1,7)), 20, 4, resultMissMatch
+                },
             };
 
             //Αρχικοποίηση δείκτη περιπτώσεων ελέγχου

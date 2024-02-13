@@ -54,7 +54,8 @@ namespace UnitTestProject
                 {1,true, "Markantonis&01", "Format"},
                 {2,false, "Markantonis01", "Format"},
                 {3,false, "markantonis&01", "Format"},
-                {4,false, "markantonisdim", "Format"}
+                {4,false, "markantonisdim", "Format"},
+                {4,true, "markantonisdimimitris", "Format"},
             };
 
             //Αρχικοποίηση δείκτη περιπτώσεων ελέγχου
