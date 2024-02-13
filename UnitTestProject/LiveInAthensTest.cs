@@ -75,15 +75,15 @@ namespace UnitTestProject
         {
             HRLib.HRLib hRLib = new HRLib.HRLib();
 
-            Employee[] list1 = new Employee[]{};
+            Employee[] list3 = new Employee[]{};
 
-            Employee[] list2 = new Employee[]{
+            Employee[] list4 = new Employee[]{
                 new Employee("Markantonis Dimitrios", " 9814217", "6972634757", new DateTime(2001, 11, 3), new DateTime(2023, 1, 7)),
                 new Employee("Markantonis Dimitrios", "21        ", "6972634757", new DateTime(2001, 11, 3), new DateTime(2023, 1, 7)),
                 new Employee("Markantonis Dimitrios", "21       1", "6972634757", new DateTime(2001, 11, 3), new DateTime(2023, 1, 7))
             };
 
-            Employee[] list3 = new Employee[]{
+            Employee[] list5 = new Employee[]{
                 new Employee("Markantonis Dimitrios", "2309814123", "6972634757", new DateTime(2001, 11, 3), new DateTime(2023, 1, 7)),
                 new Employee("Markantonis Dimitrios", "2409814217", "6972634757", new DateTime(2001, 11, 3), new DateTime(2023, 1, 7)),
                 new Employee("Markantonis Dimitrios", "2509813223", "6972634757", new DateTime(2001, 11, 3), new DateTime(2023, 1, 7)),
@@ -92,9 +92,9 @@ namespace UnitTestProject
             };
 
             object[,] testcases = {
-                {1, list1, 0, emptyList},
-                {2, list2, 0, notValidPhone},
-                {3, list3, 0, zeroMatch},
+                {1, list3, 0, emptyList},
+                {2, list4, 0, notValidPhone},
+                {3, list5, 0, zeroMatch},
             };
 
             //Αρχικοποίηση δείκτη περιπτώσεων ελέγχου
